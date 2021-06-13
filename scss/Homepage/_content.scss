@@ -28,7 +28,7 @@ p {
     font-family: "Roboto Mono", monospace;
     cursor: pointer;
     padding: 10px;
-    min-width: 200px;
+    min-width: 300px;
     height: 50px;
     font-size: 1.2rem;
     border-radius: 10px;
@@ -37,6 +37,7 @@ p {
     border: 2px solid #eff;
     color: #eff;
     transition: 0.2s;
+    outline: none;
 
     &:hover {
       background: #eff;
