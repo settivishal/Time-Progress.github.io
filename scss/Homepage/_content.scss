@@ -1,0 +1,48 @@
+.homepage {
+  min-height: 70vh;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+h2 {
+  padding: 10px;
+  font-size: 3rem;
+  color: #eee;
+}
+
+p {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #eff;
+}
+
+.buttons {
+  min-height: 300px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  button {
+    font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+    padding: 10px;
+    min-width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-transform: capitalize;
+    background: transparent;
+    border: 2px solid #eff;
+    color: #eff;
+    transition: 0.2s;
+
+    &:hover {
+      background: #eff;
+      color: #222;
+      box-shadow: inset 0px 0px 20px #a8dadc, 0px 0px 20px #a8dadc,
+        0px 0px 10px #a8dadc;
+    }
+  }
+}

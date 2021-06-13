@@ -1,0 +1,36 @@
+@import "./Homepage/navbar";
+@import "./Homepage/content";
+@import "./progress";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 62.5%;
+  background: #457b9d;
+  font-family: "Roboto Mono", monospace;
+}
+// ------loader----------
+// #preloader {
+//   background: #000 url(../Ripple-1s-200px.gif) no-repeat center center;
+//   background-size: 20%;
+//   height: 100vh;
+//   width: 100%;
+//   position: fixed;
+//   z-index: 100;
+// }
+
+// -----footer----------
+.footer {
+  text-align: center;
+
+  p {
+    padding: 5px;
+    font-size: 0.7rem;
+  }
+}
