@@ -11,12 +11,18 @@
       href="./images/logo vks 6.png"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <script
+      src="https://kit.fontawesome.com/9a691a63d0.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="./css/style.css" />
     <title>Time Progress</title>
   </head>
   <body>
+    <div id="preloader"></div>
     <div class="container">
       <!----------navbar------------>
       <nav class="navbar">
@@ -25,6 +31,7 @@
             ><img src="./images/LOGOVKS7.1.png" alt="logo"
           /></a>
         </div>
+        <i class="fas fa-bars"></i>
         <div class="navlinks">
           <ul>
             <li><a href="./index.html">Home</a></li>
@@ -51,6 +58,13 @@
     <div class="footer">
       <p>copyright &copy; 2021</p>
     </div>
+    <!-- preloader -->
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", () => {
+        loader.style.display = "none";
+      });
+    </script>
     <script src="./jsfiles/dayProgress.js"></script>
   </body>
 </html>

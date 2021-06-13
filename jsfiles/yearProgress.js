@@ -12,3 +12,11 @@ let fractionDays = ((current-thisYear)/(nextYear-thisYear)).toFixed(3);
 
 meter.style.width = (fractionDays*100).toFixed(2) + "%";
 value.innerHTML = (fractionDays*100).toFixed(2) + "% Finished";
+
+// ----------hamburger option
+const ham = document.querySelector(".fas");
+const nav = document.querySelector('.navlinks');
+
+ham.addEventListener('click',()=>{
+    nav.classList.toggle('active');
+})
