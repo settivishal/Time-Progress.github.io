@@ -12,8 +12,38 @@ body {
   min-height: 100vh;
   width: 100%;
   font-size: 62.5%;
-  background: #457b9d;
+  // background: #457b9d;
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    90deg,
+    #0077b6,
+    #0096c7,
+    #00b4d8,
+    #48cae4,
+    #90e0ef
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    90deg,
+    #0077b6,
+    #0096c7,
+    #00b4d8,
+    #48cae4,
+    #85e1f1
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: "Roboto Mono", monospace;
+  background-size: 800%;
+  background-repeat: none;
+  background-position: left;
+  animation: bg-change 180s infinite alternate;
+}
+
+@keyframes bg-change {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 // ------loader----------
 #preloader {
