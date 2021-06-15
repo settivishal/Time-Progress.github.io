@@ -46,27 +46,28 @@ p {
       background: #eff;
       color: #222;
       box-shadow: inset 0px 0px 20px #a8dadc, 0px 0px 20px #a8dadc,
-        0px 0px 10px #a8dadc;
+        0px 0px 10px #a8dadc, 0px 0px 10px #a8dadc;
     }
   }
 
-  button::before {
-    content: " ";
-    position: absolute;
-    top: 50px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #eff;
-    display: none;
+  // --------buttons shadow effect
+  // button::before {
+  //   content: " ";
+  //   position: absolute;
+  //   top: 50px;
+  //   left: 0;
+  //   height: 100%;
+  //   width: 100%;
+  //   background: #eff;
+  //   display: none;
 
-    transform: perspective(1em) rotateX(40deg) scale(1, 0.4);
-    filter: blur(1.5em);
-    // opacity: 0.8;
-    transition: 0.2s;
-  }
-  button:hover::before,
-  button:focus::before {
-    display: block;
-  }
+  //   transform: perspective(1em) rotateX(45deg) scale(0.8, 0.6);
+  //   filter: blur(1.5em);
+  //   // opacity: 0.8;
+  //   transition: 0.2s;
+  // }
+  // button:hover::before,
+  // button:focus::before {
+  //   display: block;
+  // }
 }
